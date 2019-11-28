@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+h2 {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 4;
+  }
+}
+
+.slides {
+  height: 700px; 
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+  background-color: #0d0d0d
+}
+
+.card-text {
+  color: #fff;
+  font-weight: normal;
+
+}
+
+.card-body {
+  background-color: #0d0d0d;
+}
+
+.card-title {
+  color: #ccc;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.foto {
+  position: absolute;
+  opacity: 0;
+  animation: animacao 20s infinite;
+}
+
+@keyframes animacao {
+  25% {
+    opacity: 1;
+    transform:scale(1.1,1.1);
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.foto:nth-child(1){
+}
+.foto:nth-child(2){
+  animation-delay: 5s;
+}
+.foto:nth-child(3){
+  animation-delay: 10s;
+}
+.foto:nth-child(4){
+  animation-delay: 15s;
+}
+.foto:nth-child(5){
+  animation-delay: 20s;
+}
+.foto:nth-child(6){
+  animation-delay: 25s;
+}
+.foto:nth-child(7){
+  animation-delay: 30s;
+}
+.foto:nth-child(8){
+  animation-delay: 40s;
+}
+.foto:nth-child(9){
+  animation-delay: 45s;
+}
+.foto:nth-child(10){
+  animation-delay: 50s;
+}
+.foto:nth-child(11){
+  animation-delay: 55s;
+}
+.foto:nth-child(12){
+  animation-delay: 60s;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.final {
+  font: inherit;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url(images/cabecalho.jpg);
+  color: white;
+  text-align: left;
+}
+
+body {
+	margin: 0;
+  background-image: url(images/cabecalho.jpg);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 120px;
+  padding-top: 55px;
+  position: relative;
+}
+
+nav a {
+  color: #fcdf2b;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #fcdf2b;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #fcdf2b;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.logo {
+  margin-top: 10px;
+  float: left;
+  padding: 0px;
+}
+
+.alunos {
+  font: inherit;
+  font-size: 16px;
+  font-weight: normal;
+  color: #fcdf2b;
+  margin-left: 10px;
+}
+
+.container {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  background-image: url(images/cabecalho.jpg);
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: #fcdf2b;
+}
+
+.sobre p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 25px;
+  color: #fcdf2b;
+  margin-bottom: 3px;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+.sobre h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-right: 75px;
+  margin-left: 75px;
+  color: #fcdf2b
+
+  ;
+}
